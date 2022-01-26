@@ -5,14 +5,19 @@ body {
     line-height: 1.5em;
     margin: 0;
 }
-
-section {
-    border: 1px solid black;
-    background-color: beige;
+header {
+    position: relative;
+    width: 100%;
+    background-color: #3d3935;
+    float: left;
+    padding-bottom: 14px;
+    padding-top: 16px;
 }
 
 .sec2 {
-    color: red;
-    font-size: 30;
-    font-style: italic;
+    width: 100%;
+    float: left;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgb(50 50 50 / 75%);
 }
