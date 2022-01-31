@@ -1,13 +1,36 @@
-<html>
-  <head>
-    <title>My Awesome App</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/calculator.css"/>
-  </head>
-  <header>
-  </header>
-  <body>
-    <section id="sec2" class="column">
-      Grade Calculator
+<head>
+  <title>Calculator</title>
+  <!-- <link rel="stylesheet" href="/stylesheets/calculator.css"/> --> 
+  <link rel="stylesheet" href="calculator.css"/>
+  <script src="calculator.js"></script>
+</head>
+<body>
+  <section id="greyBackground">
+    <section id="whiteBox">
+      <h2>Grade Calculator</h2>
+      <section id="blueBackground">
+        <h3>Activities</h3>
+        <h5>Give grades to the numeric activities:</h5>
+        
+        <table id="gradesTable">
+          <tr>
+            <th>Name</th>
+            <th>Short Name</th>
+            <th>Weight</th>
+            <th>Grade</th>
+            <th>Percent</th>
+          </tr>
+        </table>
+
+        <input type="button" value="ADD ACTIVITY" id="addActivity" class="redButton" onclick="addRow()"/>
+
+        <h3>Result</h3>
+        <h4 id="finalResult"></h4>
+        <section id="resultButtons">
+          <input type="button" value ="WEIGHTED" id="weighted" class="redButton" onclick="weighted()"/>
+          <input type="button" value="MEAN" id="mean" class="redButton" onclick="mean()"/>
+        </section>
+      </section>
     </section>
-  </body>
-</html>
+  </section>
+</body>
